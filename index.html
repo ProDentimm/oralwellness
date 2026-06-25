@@ -31,8 +31,12 @@ position:relative;
 .overlay{
 position:absolute;
 inset:0;
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(1px);
+pointer-events:none;
+background:
+url("https://www.transparenttextures.com/patterns/leaf.png") top left no-repeat,
+url("https://www.transparenttextures.com/patterns/leaf.png") bottom right no-repeat;
+background-size:260px;
+opacity:.18;
 }
 
 .card{
@@ -40,13 +44,53 @@ position:relative;
 z-index:2;
 width:420px;
 background:#ffffff;
-border-radius:18px;
+border-radius:22px;
 padding:35px;
 text-align:center;
+border:1px solid rgba(30,180,90,.18);
 box-shadow:0 15px 40px rgba(0,0,0,.12);
-border:1px solid rgba(30,180,90,.15);
+overflow:hidden;
 }
 
+.card::before{
+content:"🌿";
+position:absolute;
+top:12px;
+left:15px;
+font-size:42px;
+opacity:.18;
+transform:rotate(-20deg);
+}
+
+.card::after{
+content:"🌿";
+position:absolute;
+bottom:12px;
+right:15px;
+font-size:42px;
+opacity:.18;
+transform:rotate(160deg);
+}
+.leaf1,
+.leaf2{
+position:absolute;
+font-size:34px;
+opacity:.18;
+pointer-events:none;
+}
+
+.leaf1{
+top:18px;
+right:18px;
+transform:rotate(25deg);
+}
+
+.leaf2{
+bottom:18px;
+left:18px;
+transform:rotate(-155deg);
+}
+  
 h1{
 font-size:34px;
 color:#157a3f;
@@ -99,6 +143,8 @@ color:#777;
 <div class="overlay"></div>
 
 <div class="card">
+<span class="leaf1">🌿</span>
+<span class="leaf2">🌿</span>
 
 <h1>🦷 Oral Wellness</h1>
 
