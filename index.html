@@ -3,166 +3,303 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oral Wellness</title>
+<title>ProDentim</title>
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#ffffff;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-overflow:hidden;
-position:relative;
+background:#f7faf7;
+color:#222;
+line-height:1.6;
 }
 
-.overlay{
-position:absolute;
-inset:0;
-pointer-events:none;
-background:
-.overlay{
-position:absolute;
-inset:0;
-pointer-events:none;
-background:
-url("https://www.transparenttextures.com/patterns/leaf.png") left center no-repeat,
-url("https://www.transparenttextures.com/patterns/leaf.png") right center no-repeat;
-background-size:220px;
-opacity:.15;
-}
-border-radius:22px;
-padding:35px;
+header{
+background:linear-gradient(135deg,#ffffff,#eef9ef);
+padding:70px 20px;
 text-align:center;
-border:1px solid rgba(30,180,90,.18);
-box-shadow:0 15px 40px rgba(0,0,0,.12);
-overflow:hidden;
+border-bottom:1px solid #dfeedd;
 }
 
-.card::before{
-content:"🌿";
-position:absolute;
-top:12px;
-left:15px;
+.logo{
+width:90px;
+height:90px;
+margin:auto;
+background:#24b35b;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
 font-size:42px;
-opacity:.18;
-transform:rotate(-20deg);
+color:#fff;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
-.card::after{
-content:"🌿";
-position:absolute;
-bottom:12px;
-right:15px;
-font-size:42px;
-opacity:.18;
-transform:rotate(160deg);
-}
-.leaf1,
-.leaf2{
-position:absolute;
-font-size:34px;
-opacity:.18;
-pointer-events:none;
-}
-
-.leaf1{
-top:18px;
-right:18px;
-transform:rotate(25deg);
-}
-
-.leaf2{
-bottom:18px;
-left:18px;
-transform:rotate(-155deg);
-}
-  
 h1{
-font-size:34px;
+margin-top:20px;
+font-size:42px;
 color:#157a3f;
-margin-bottom:15px;
 }
 
-p{
+.subtitle{
+max-width:650px;
+margin:18px auto;
+font-size:20px;
 color:#555;
-line-height:1.7;
-margin-bottom:25px;
 }
 
-ul{
-text-align:left;
-margin-bottom:25px;
-color:#333;
-line-height:2;
-padding-left:20px;
-}
-
-a{
-display:block;
-background:#1fb65c;
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:18px 42px;
+background:#22b85c;
 color:#fff;
 text-decoration:none;
-padding:16px;
-border-radius:10px;
-font-size:20px;
+font-size:22px;
+border-radius:12px;
 font-weight:bold;
 transition:.3s;
 }
 
-a:hover{
-background:#148944;
-transform:translateY(-2px);
-box-shadow:0 10px 25px rgba(31,182,92,.35);
+.btn:hover{
+background:#178847;
 }
 
-.small{
-margin-top:18px;
-font-size:13px;
-color:#777;
+section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:28px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.card h3{
+color:#157a3f;
+margin:15px 0;
+font-size:24px;
+}
+
+.card p{
+color:#666;
+}
+
+.trust{
+background:#fff;
+padding:70px 20px;
+text-align:center;
+}
+
+.badges{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.badge{
+background:#f3fbf4;
+padding:18px 30px;
+border-radius:12px;
+font-weight:bold;
+color:#157a3f;
+border:1px solid #d8ecd9;
+}
+.hero-image{
+margin-top:45px;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:520px;
+border-radius:20px;
+box-shadow:0 12px 35px rgba(0,0,0,.15);
+}
+
+.features-title{
+text-align:center;
+font-size:36px;
+color:#157a3f;
+margin-bottom:40px;
+}
+
+.review{
+background:#ffffff;
+border-radius:18px;
+padding:30px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+margin-top:40px;
+text-align:center;
+}
+
+.review h2{
+color:#157a3f;
+margin-bottom:20px;
+}
+
+.review p{
+font-size:18px;
+color:#555;
+line-height:1.8;
+}
+
+footer{
+background:#157a3f;
+color:#fff;
+text-align:center;
+padding:25px;
+margin-top:70px;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:34px;
+}
+
+.subtitle{
+font-size:18px;
+}
+
+.btn{
+font-size:20px;
+width:100%;
+}
+
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="overlay"></div>
+<header>
 
-<div class="card">
-<span class="leaf1">🌿</span>
-<span class="leaf2">🌿</span>
+<div class="logo">🦷</div>
 
-<h1>🦷 Oral Wellness</h1>
+<h1>ProDentim</h1>
 
-<p>
-Discover a natural solution trusted by thousands for healthier gums,
-stronger teeth and fresher breath.
+<p class="subtitle">
+Advanced Oral Probiotic Formula designed to support healthier gums,
+fresh breath and stronger teeth.
 </p>
 
-<ul>
-<li>✔ Healthy Teeth</li>
-<li>✔ Fresh Breath</li>
-<li>✔ Strong Gums</li>
-<li>✔ Natural Formula</li>
-</ul>
-
-<a href="https://159b7kkj6j5qby9oxeq41pribe.hop.clickbank.net">
-Discover More →
+<a href="#" class="btn">
+Learn More →
 </a>
 
-<div class="small">
-Official Information • Secure Website
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=80">
+</div>
+
+</header>
+
+<section>
+
+<h2 class="features-title">
+Why Choose ProDentim?
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🦷 Healthy Teeth</h3>
+<p>Supports stronger teeth with a daily wellness routine.</p>
+</div>
+
+<div class="card">
+<h3>🌿 Healthy Gums</h3>
+<p>Helps maintain healthy gums and oral balance.</p>
+</div>
+
+<div class="card">
+<h3>✨ Fresh Breath</h3>
+<p>Enjoy long-lasting freshness throughout the day.</p>
+</div>
+
+<div class="card">
+<h3>❤️ Daily Wellness</h3>
+<p>Simple daily support for better oral hygiene.</p>
 </div>
 
 </div>
+
+<div class="review">
+
+<h2>Trusted by Thousands</h2>
+
+<p>
+Discover why ProDentim has become one of the most talked-about
+oral wellness solutions. Learn more about its ingredients,
+benefits and customer experiences.
+</p>
+
+</div>
+
+</section>
+<section class="trust">
+
+<h2 class="features-title">
+Why People Trust ProDentim
+</h2>
+
+<div class="badges">
+
+<div class="badge">✔ Natural Formula</div>
+
+<div class="badge">✔ Daily Oral Support</div>
+
+<div class="badge">✔ Quality Ingredients</div>
+
+<div class="badge">✔ Secure Information</div>
+
+</div>
+
+</section>
+
+<section style="text-align:center;">
+
+<h2 class="features-title">
+Ready to Learn More?
+</h2>
+
+<p style="max-width:700px;margin:20px auto;color:#555;font-size:18px;">
+Explore detailed information, ingredients, benefits and customer experiences to see if ProDentim is the right choice for your oral wellness journey.
+</p>
+  
+<a href="https://28688gl51g6w9pad1fq3rima7l.hop.clickbank.net" class="btn" target="_blank">
+Discover ProDentim →
+</a>
+
+<p style="margin-top:18px;color:#777;font-size:14px;">
+Independent Information • Secure Website
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 ProDentim • Independent Information Portal</p>
+
+</footer>
 
 </body>
 </html>
