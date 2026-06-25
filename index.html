@@ -6,28 +6,45 @@
 <title>Oral Wellness</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-background:url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+background:
+linear-gradient(rgba(255,255,255,.92),rgba(255,255,255,.92)),
+url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
+overflow:hidden;
+position:relative;
 }
+
 .overlay{
 position:absolute;
 inset:0;
-background:rgba(0,0,0,.55);
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(1px);
 }
+
 .card{
 position:relative;
 z-index:2;
 width:420px;
-background:#fff;
+background:#ffffff;
 border-radius:18px;
 padding:35px;
 text-align:center;
-box-shadow:0 15px 40px rgba(0,0,0,.3);
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+border:1px solid rgba(30,180,90,.15);
 }
 
 h1{
@@ -47,12 +64,13 @@ text-align:left;
 margin-bottom:25px;
 color:#333;
 line-height:2;
+padding-left:20px;
 }
 
 a{
 display:block;
 background:#1fb65c;
-color:white;
+color:#fff;
 text-decoration:none;
 padding:16px;
 border-radius:10px;
@@ -63,7 +81,8 @@ transition:.3s;
 
 a:hover{
 background:#148944;
-transform:scale(1.04);
+transform:translateY(-2px);
+box-shadow:0 10px 25px rgba(31,182,92,.35);
 }
 
 .small{
@@ -95,7 +114,7 @@ stronger teeth and fresher breath.
 <li>✔ Natural Formula</li>
 </ul>
 
-<a href="https://3c0c9kti2n3t2n5btanbxikh9z.hop.clickbank.net" target="_blank">
+<a href="https://3c0c9kti2n3t2n5btanbxikh9z.hop.clickbank.net">
 Discover More →
 </a>
 
