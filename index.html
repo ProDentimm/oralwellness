@@ -6,72 +6,181 @@
 <title>Oral Wellness Hub</title>
 
 <style>
-body{
+
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#f4f7f5;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+
+background:url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1600&q=80') center center/cover no-repeat;
+
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
+}
+
+.overlay{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+
 }
 
 .card{
-background:white;
-padding:35px;
-max-width:500px;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+position:relative;
+z-index:10;
+
+width:420px;
+max-width:92%;
+
+backdrop-filter:blur(15px);
+
+background:rgba(255,255,255,.18);
+
+border:1px solid rgba(255,255,255,.3);
+
+border-radius:20px;
+
+padding:40px;
+
 text-align:center;
+
+color:#fff;
+
+box-shadow:0 15px 40px rgba(0,0,0,.3);
+
+}
+
+.logo{
+
+font-size:48px;
+
+margin-bottom:10px;
+
 }
 
 h1{
-color:#1b5e20;
+
+font-size:36px;
+
 margin-bottom:10px;
+
 }
 
 p{
-font-size:18px;
-color:#555;
-line-height:1.6;
+
+font-size:17px;
+
+line-height:1.7;
+
+margin-bottom:20px;
+
 }
 
-a{
+.rating{
+
+font-size:22px;
+
+color:#FFD700;
+
+margin-bottom:20px;
+
+}
+
+.btn{
+
 display:inline-block;
-margin-top:20px;
-padding:15px 30px;
-background:#2e7d32;
-color:white;
+
+padding:18px 42px;
+
+background:#1DB954;
+
+border-radius:60px;
+
+color:#fff;
+
 text-decoration:none;
-font-size:18px;
-border-radius:10px;
+
+font-size:20px;
+
 font-weight:bold;
+
 transition:.3s;
+
 }
 
-a:hover{
-background:#1b5e20;
+.btn:hover{
+
+background:#14863c;
+
+transform:scale(1.05);
+
 }
+
+.note{
+
+margin-top:18px;
+
+font-size:13px;
+
+opacity:.85;
+
+}
+
 </style>
 
 </head>
 
 <body>
 
+<div class="overlay"></div>
+
 <div class="card">
+
+<div class="logo">🦷</div>
 
 <h1>Oral Wellness Hub</h1>
 
 <p>
-Discover one of the most talked-about oral wellness solutions.
-Click below to learn more from the official source.
+
+Discover one of the most talked-about oral wellness solutions trusted by thousands worldwide.
+
 </p>
 
-<a href="https://3c0c9kti2n3t2n5btanbxikh9z.hop.clickbank.net">
-Visit Official Website
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<a class="btn"
+
+href="https://3c0c9kti2n3t2n5btanbxikh9z.hop.clickbank.net"
+
+target="_blank">
+
+Learn More →
+
 </a>
+
+<div class="note">
+
+You will be redirected to the official website.
+
+</div>
 
 </div>
 
 </body>
+
 </html>
